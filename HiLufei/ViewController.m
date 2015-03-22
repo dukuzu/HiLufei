@@ -70,7 +70,7 @@
     UIButton *bottomButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [bottomButton setFrame:CGRectMake(143.5, 434.5, 33, 33)];
     [bottomButton setBackgroundImage:[UIImage imageNamed:@"logo.png"] forState:UIControlStateNormal];
-    [bottomButton addTarget:self action:@selector(detailButton:) forControlEvents:UIControlEventTouchUpInside];
+    [bottomButton addTarget:self action:@selector(Login:) forControlEvents:UIControlEventTouchUpInside];
     [pageViewController.view addSubview:bottomButton];
     
 
