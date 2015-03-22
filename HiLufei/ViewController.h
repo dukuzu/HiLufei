@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContentViewController.h"
+@interface ViewController : UIViewController<UIPageViewControllerDataSource>
 
-@interface ViewController : UIViewController
 
+@property(nonatomic,strong)UIPageViewController *pageViewController;
+@property(nonatomic,strong)NSDate *date;
+@property(nonatomic,strong)UILabel *monthLabel;
+@property(nonatomic,weak)ContentViewController *contentViewController;
+@property(nonatomic,strong)NSMutableDictionary *imageDictionary;
+@property(nonatomic,strong)NSMutableDictionary *quotesDictionary;
+
+
+- (IBAction)Login:(id)sender;
 
 @end
 
